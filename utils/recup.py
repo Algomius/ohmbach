@@ -1,0 +1,27 @@
+import io
+f = io.open("old.sql", mode="r", encoding="utf-8")
+s = io.open("messages.js", mode="w", encoding="utf-8")
+
+s.write("messages = [\n")
+for x in f:
+    s.write("\t{\n")
+    l = x.split('VALUES (')
+    l = l[1].split(');')
+    l = l[0].split('\',')
+    print(l)
+    s.write("\t\t\"_id\":\"" + l[0][1:] + "\",\n") 
+    s.write("\t\t\"nom\":\"" + l[1][2:] + "\",\n") 
+    s.write("\t\t\"email\":\"" + l[2][2:] + "\",\n")  
+    s.write("\t\t\"site\":\"" + l[3][2:] + "\",\n")  
+    s.write("\t\t\"ville\":\"" + l[4][2:] + "\",\n")  
+    s.write("\t\t\"pays\":\"" + l[5][2:] + "\",\n") 
+    s.write("\t\t\"note\":\"" + l[6][2:] + "\",\n") 
+    s.write("\t\t\"message\":\"" + l[7][2:] + "\",\n") 
+    s.write("\t\t\"titre_reponse\":\"" + l[8][2:] + "\",\n") 
+    s.write("\t\t\"reponse\":\"" + l[9][2:] + "\",\n") 
+    s.write("\t\t\"time\":\"" + l[10][2:] + "\",\n") 
+    s.write("\t\t\"ip\":\"" + l[11][2:] + "\",\n") 
+    s.write("\t\t\"valid\":\"" + l[12][2:-1] + "\",\n") 
+    s.write("\t},\n")
+
+s.write("];")
