@@ -1,0 +1,415 @@
+/* General */
+:root {
+    --black : #000000;
+    --white : #FFFFFF;
+    --light-yellow : #D1B18A;
+    --dark-yellow : #262513;
+    --light-red : #9FCCD6;
+    --dark-red : #3B8494;
+    --light-broun : #AD7B33;
+    --dark-broun : #865341;
+}
+
+body {
+    background-color: var(--light-yellow);
+}
+
+h1, h2, h3 {
+    background-color: var(--dark-yellow);
+    color : var(--white);
+    border-radius: 10px;
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+    padding : 10px;
+    font-family: 'Oswald', Arial, serif;
+}
+
+h1 {
+    font-size : 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size : 2em;
+    margin-bottom : 20px; 
+}
+
+h3 {
+    font-size : 2em;
+    font-style: italic;
+    margin-bottom : 20px; 
+    text-align: center;
+}
+
+p, li, td {
+    color : var(--black);
+    background-color: inherit;
+    text-align: justify;
+    font-size: 1.5em;
+    margin:0;
+    font-family: 'SourceSansPro', Arial, serif;
+    margin-bottom : 20px; 
+}
+
+.logo {
+    border-radius: 10%;  
+    height : 150px;
+    width : 150px;
+    object-fit: cover;
+}
+
+.bouton {
+    background-color: var(--dark-red);
+    color : var(--white);
+    border-radius: 10px;
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+    padding : 10px;
+    font-size : 2em;
+    text-align: center;
+    font-family: 'SourceSansPro', Arial, serif;
+    min-width : 200px;
+    margin-bottom : 20px; 
+}
+
+.bouton:hover {
+    background-color: var(--light-red);
+    color : var(--black);
+}
+
+/* barres de navigation */
+
+.navigation {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--dark-broun);
+    padding : 20px;
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+header img {
+    margin: auto;
+}
+
+header nav {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width : 75%;
+    height : 20%;
+    margin : auto;
+}
+
+header nav a {
+    width : 30%;
+}
+
+/* Main */
+
+main {
+    width:80%;
+    margin:auto;
+}
+
+/* navigation entre les documents */
+
+.navigation {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+/* Général Section */
+
+section {
+    background-color: var(--light-broun);
+    border-radius: 10px;
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+    padding : 20px;
+    margin-top : 20px;
+}
+
+.conteneur_photos {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail_lien {
+    width : 30%;
+    height : 250px;
+    border-radius: 25px;
+    box-shadow: var(--black) 5px 5px 5px 1px;  
+    margin-bottom: 25px;  
+}
+
+.detail_photo {
+    width : 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Panel Présentation */
+
+#presentation_piscine {
+    display : flex;
+    flex-direction: column;
+    margin-bottom : 20px;
+}
+
+#presentation_piscine img {
+    object-fit: cover;
+    border-radius: 25px;   
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+}
+
+#presentation_gite {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom : 20px;  
+    width : 100%;
+}
+
+#presentation_gite img{
+    object-fit: cover;
+    border-radius: 25px;  
+    width : 45%;
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+}
+
+#presentation_gite p{
+    width : 30%; 
+    margin : auto;
+}
+
+/* Panel Piscine */
+/* Panel Appartement */
+/* Panel Tarif */
+
+#tarifs_detail {
+    margin-bottom: 25px;
+}
+
+.conteneur_tarifs {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conteneur_tarifs_appart {
+    position: relative;
+    text-align: center;
+    color: white;
+    width : 50%;  
+}
+
+.conteneur_tarifs_appart img {
+    object-fit: cover;
+    border-radius: 25px;  
+    width : 100%;
+    box-shadow: var(--black) 5px 5px 5px 1px; 
+}
+
+.conteneur_tarifs_appart_surface {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color : var(--black);
+    font-size: 2em;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 25px;  
+}
+
+.conteneur_tarifs_appart_etage {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color : var(--black);
+    font-size: 2em;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 25px;  
+}
+
+.panelPrix {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    width : 40%;
+    align-items: center;
+}
+
+/* Panel Soultzmatt */
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--dark-broun);
+    display : flex;
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+.footer-element {
+    width : 50%;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-element h2 {
+    width : 90%;
+    text-align: center;
+}
+
+.footer-element .logo {
+    margin: auto;
+    display: block;
+}
+
+.footer-element-list {
+    display : flex;
+    flex-direction :row;
+    justify-content: space-around;  
+    width : 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1800px) 
+{
+
+    main {
+        width:90%;
+    }
+
+    .detail_lien {
+        width : 45%;
+    }
+
+    #presentation_gite {
+        justify-content: space-between;
+    }
+    
+    #presentation_gite p{
+        width : 50%; 
+    }
+    
+
+    .footer-element-list {
+        flex-direction :column;
+    }
+}
+
+@media screen and (max-width: 1000px) 
+{
+    /* Header */
+
+    header nav {
+        display : flex;
+        flex-direction : column;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        width : 80%;
+        margin : 10px;
+    }
+
+    /* Navigation */
+
+    .navigation {
+        flex-direction : column;
+        align-items: center;
+    }
+
+    .navigation .bouton {
+        width : 80%;
+        margin : 10px;
+        text-align: center;
+        display: block;
+    }
+
+
+    /* main */
+    main {
+        width:95%;
+    }
+
+    /* commun */
+    .conteneur_photos {
+        flex-direction: column;
+    }
+
+    .detail_lien {
+        width : 100%;
+    }
+
+
+    /* Presentation */
+    #presentation_gite {
+        flex-direction: column-reverse;
+    }
+
+    #presentation_gite img{
+        width : 100%; 
+        margin-bottom: 20px;
+    }
+
+    #presentation_gite p{
+        width : 95%; 
+    }
+
+    /* Tarifs */
+
+    .conteneur_tarifs {
+        flex-direction: column;
+    }
+    
+    .conteneur_tarifs_appart {
+        width : 100%;
+        margin-bottom: 20px;  
+    }
+
+    #tarifs_detail {
+        margin-bottom: 20px;
+    }
+
+    .panelPrix {
+        width : 100%;
+    }
+
+    /* Pied de page */
+    footer {
+        flex-direction : column;
+    }
+
+    .footer-element {
+        width : 80%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer-element-list {
+        flex-direction :column;
+        width : 60%;
+    }
+}

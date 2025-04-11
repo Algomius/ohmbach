@@ -1,0 +1,40 @@
+#conteneur_contact {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+#conteneur_contact iframe {
+    width : 45%;
+}
+
+#conteneur_contact_detail {
+    width: 45%;
+}
+
+@media screen and (max-width: 1800px) 
+{    
+    #conteneur_contact iframe {
+        width : 48%;
+    }
+    
+    #conteneur_contact_detail {
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) 
+{
+    #conteneur_contact {
+        flex-direction : column-reverse;
+    }
+    
+    #conteneur_contact iframe {
+        width : 100%;
+    }
+    
+    #conteneur_contact_detail {
+        width: 100%;
+    }
+}
